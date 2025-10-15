@@ -1,0 +1,11 @@
+---
+services:
+  bw-cli:
+    image: ghcr.io/myanesp/bw-cli
+    volumes:
+      - "./bitwarden:/root/.config/Bitwarden CLI/"
+    environment:
+      - TZ=Europe/Madrid
+      - BW_CLIENTID=
+      - BW_CLIENTSECRET=
+    container_name: bw-cli
